@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPSIS Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>TOPSIS Decision Maker</h1>
+
+        <div class="card">
+            <label class="file-upload">
+                <input type="file" id="file" accept=".csv" hidden />
+                <span id="file-label">Choose CSV File</span>
+            </label>
+
+            <input type="text" id="weights" placeholder="Weights (e.g. 1,2,1,1)" />
+            <input type="text" id="impacts" placeholder="Impacts (e.g. +,+,-,+)" />
+
+            <button id="runBtn" type="button">Run TOPSIS</button>
+            <p id="status"></p>
+        </div>
+
+        <div id="table-container"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
